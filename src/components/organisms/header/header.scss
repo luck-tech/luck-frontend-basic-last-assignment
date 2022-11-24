@@ -54,7 +54,7 @@
             }
           }
           .nav-link {
-            padding: 37px 20px;
+            padding: 34px 20px;
             color: $white;
             transition: 0.2s ease;
             &:hover {
@@ -89,7 +89,7 @@
       height: 20.56px;
       .navbar-brand-img {
         width: 120px;
-        vertical-align: none;
+        vertical-align: baseline;
       }
     }
     .navbar-toggler {
