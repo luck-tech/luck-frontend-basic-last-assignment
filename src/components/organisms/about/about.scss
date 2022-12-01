@@ -1,0 +1,21 @@
+@use "../../variables" as *;
+@use "../../molecules/message/message.scss" as *;
+
+.about {
+  .img-table {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    @media (max-width: $breakpoint-lg) {
+      grid-template-columns: 1fr 1fr;
+    }
+    .about-img {
+      width: 100%;
+    }
+  }
+  .message {
+    background-color: $white_smoke;
+    .title {
+      color: $orange_bistre;
+    }
+  }
+}

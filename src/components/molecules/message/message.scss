@@ -21,6 +21,7 @@
   .explanation {
     font-size: $fontsize-s;
     line-height: 2.6;
+    color: $black;
     @media screen and(max-width: $breakpoint-lg) {
       line-height: 2;
     }
