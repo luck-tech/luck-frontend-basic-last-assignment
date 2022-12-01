@@ -26,34 +26,4 @@
       }
     }
   }
-  .top-message {
-    text-align: center;
-    background-color: $black;
-    color: $white;
-    padding: 52px 20px 74px;
-    @media screen and (max-width: $breakpoint-lg) {
-      padding: 32px 20px;
-    }
-    .message-header {
-      line-height: 1.5;
-      text-align: center;
-
-      padding-bottom: 10px;
-      margin: 0%;
-      font-size: $fontsize-xl;
-      font-family: $fontfamily-mincho;
-      @media screen and (max-width: $breakpoint-lg) {
-        font-size: $fontsize-l;
-      }
-    }
-    .message-text {
-      line-height: 2.6;
-      font-size: $fontsize-s;
-
-      @media screen and (max-width: $breakpoint-lg) {
-        line-height: 2;
-        font-size: $fontsize-s;
-      }
-    }
-  }
 }
