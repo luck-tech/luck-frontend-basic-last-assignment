@@ -2,8 +2,13 @@
 @use "../../molecules/message/message.scss" as *;
 
 .about {
+  margin-bottom: 100px;
+  @media (max-width: $breakpoint-lg) {
+    margin-bottom: 40px;
+  }
   .img-table {
     display: grid;
+
     grid-template-columns: 1fr 1fr 1fr 1fr;
     @media (max-width: $breakpoint-lg) {
       grid-template-columns: 1fr 1fr;
