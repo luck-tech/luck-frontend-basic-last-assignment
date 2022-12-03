@@ -3,6 +3,9 @@
   background-color: $white_smoke;
   border: none;
   border-radius: 0;
+  @media (max-width: $breakpoint-md) {
+    margin-bottom: 40px;
+  }
   .card-img {
     border-radius: 0;
     position: relative;
