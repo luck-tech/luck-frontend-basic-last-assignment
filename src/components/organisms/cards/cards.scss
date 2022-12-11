@@ -1,10 +1,8 @@
 @use "../../variables" as *;
 @use "../../molecules/card/card.scss" as *;
 .cards {
-  .col {
-    @media (max-width: $breakpoint-md) {
-      padding: 0px 113px;
-    }
+  @media (max-width: $breakpoint-md) {
+    padding: 0px 113px;
   }
   .card {
     margin-bottom: 100px;
