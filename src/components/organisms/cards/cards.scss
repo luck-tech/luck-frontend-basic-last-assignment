@@ -1,19 +1,21 @@
 @use "../../variables" as *;
 @use "../../molecules/card/card.scss" as *;
 .cards {
-  @media (max-width: $breakpoint-md) {
-    padding: 0px 113px;
-  }
   .card {
     margin-bottom: 100px;
     @media (max-width: $breakpoint-md) {
       margin-bottom: 40px;
     }
     .card-body {
+      display: flex;
+      flex-direction: column;
       padding: 32px;
       .card-text {
-        margin-bottom: 30px;
         line-height: 33px;
+      }
+      .card-text2 {
+        line-height: 33px;
+        padding-bottom: 33px;
       }
     }
   }
