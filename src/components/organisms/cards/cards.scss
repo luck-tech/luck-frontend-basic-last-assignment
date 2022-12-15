@@ -19,6 +19,13 @@
         .card-text2 {
           line-height: 33px;
           padding-bottom: 33px;
+          @media (min-width: $breakpoint-lg) and (max-width: $breakpoint-xl) {
+            padding-bottom: 0px;
+          }
+        }
+        .card-text3 {
+          line-height: 33px;
+          padding-bottom: 33px;
         }
       }
     }
