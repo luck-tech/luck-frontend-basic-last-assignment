@@ -3,7 +3,7 @@
 
 .organisms-plans {
   .message {
-    padding: 56px 0px 32px;
+    padding-bottom: 32px;
     background-color: $white;
     .title {
       color: $orange_bistre;
@@ -13,23 +13,17 @@
     }
   }
   .row {
-    align-items: flex-end;
-    .col {
-      align-items: flex-end;
-    }
     .plans {
       margin-bottom: 40px;
       @media (max-width: $breakpoint-md) {
         margin-bottom: 24px;
       }
-      .last-child {
-        @media (min-width: $breakpoint-lg) and (max-width: $breakpoint-xl) {
-          padding-bottom: 40px;
-        }
-      }
     }
   }
   .button {
     margin: 0% auto 100px;
+    @media (max-width: $breakpoint-md) {
+      margin: 0% auto 35px;
+    }
   }
 }
