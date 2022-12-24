@@ -18,6 +18,16 @@
       @media (max-width: $breakpoint-md) {
         margin-bottom: 24px;
       }
+      .Frame4 {
+        padding: 0%;
+        margin: 0%;
+        li {
+          list-style: none;
+        }
+      }
+      .last-child {
+        padding: 17px;
+      }
     }
   }
   .button {
