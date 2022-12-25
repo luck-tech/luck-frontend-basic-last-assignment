@@ -1,0 +1,39 @@
+@use "../../variables" as *;
+@use "../../molecules/message/message.scss" as *;
+
+.organisms-plans {
+  .message {
+    padding-bottom: 32px;
+    background-color: $white;
+    .title {
+      color: $orange_bistre;
+    }
+    .explanation {
+      margin: 0%;
+    }
+  }
+  .row {
+    .plans {
+      margin-bottom: 40px;
+      @media (max-width: $breakpoint-md) {
+        margin-bottom: 24px;
+      }
+      .Frame4 {
+        padding: 0%;
+        margin: 0%;
+        li {
+          list-style: none;
+        }
+      }
+      .last-child {
+        padding: 17px;
+      }
+    }
+  }
+  .button {
+    margin: 0% auto 100px;
+    @media (max-width: $breakpoint-md) {
+      margin: 0% auto 35px;
+    }
+  }
+}
