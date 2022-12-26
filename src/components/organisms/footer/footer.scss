@@ -3,9 +3,10 @@
 .footer {
   text-align: center;
   .footer-body {
+    background-color: $white;
     .footer-img {
       width: 150px;
-      margin: 52px 0px 20px;
+      margin: 52px 0 20px;
       @media screen and (max-width: $breakpoint-md) {
         margin-top: 32px;
       }
@@ -14,13 +15,16 @@
       font-size: $fontsize-s;
       line-height: 2;
       .icons {
-        padding: 0%;
+        padding: 0;
         display: flex;
         justify-content: center;
-        margin: 20px 0px 32px;
+        margin: 20px 0 52px;
+        @media screen and (max-width: $breakpoint-md) {
+          margin-top: 32px;
+        }
         .list-item {
           list-style: none;
-          margin: 0% 7px;
+          margin: 0 7px;
           .footer-icon {
             transition: 0.2s;
             color: $black;
@@ -33,6 +37,7 @@
     }
   }
   .footer-menu {
+    background-color: $white_smoke;
     justify-content: center;
     padding: 16px;
     display: flex;
@@ -49,10 +54,10 @@
         transition: 0.2s ease;
       }
       &:last-child {
-        border: 0px;
+        border: 0;
       }
       @media screen and (max-width: $breakpoint-md) {
-        border: 0px;
+        border: 0;
         text-align: left;
       }
     }
