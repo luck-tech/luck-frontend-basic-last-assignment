@@ -1,0 +1,30 @@
+@use "../../variables" as *;
+
+.news-and-events {
+  padding: 57px 0;
+  @media screen and (max-width: $breakpoint-lg) {
+    padding: 56px 0;
+  }
+  width: 100%;
+  .col {
+    padding: 0 20px;
+    .news {
+      box-sizing: content-box;
+      width: 100%;
+      @media screen and (max-width: $breakpoint-lg) {
+        margin-bottom: 35px;
+      }
+    }
+    .events {
+      .event-list {
+        h3 {
+          font-weight: 400;
+          transition: 0.2s ease;
+          &:hover {
+            color: $orange_bistre;
+          }
+        }
+      }
+    }
+  }
+}
