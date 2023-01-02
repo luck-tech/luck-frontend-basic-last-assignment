@@ -32,6 +32,10 @@ section {
   background-color: #442606;
   text-decoration: none;
 }
+.assignment-example-button {
+  color: red;
+  font-size: 16px;
+}
 .message {
   text-align: center;
   padding: 52px 20px;
@@ -65,10 +69,6 @@ section {
   .message .explanation {
     line-height: 2;
   }
-}
-.assignment-example-button {
-  color: red;
-  font-size: 16px;
 }
 .card {
   background-color: #f5f5f5;
@@ -123,6 +123,42 @@ section {
 }
 .card .card-body .button {
   margin: auto;
+}
+.news-and-events-more {
+  align-self: flex-end;
+  margin-top: 16px;
+  cursor: pointer;
+  color: #000;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+}
+.news-and-events-more:hover {
+  color: #999;
+  text-decoration: none;
+}
+.news-and-events-more > i {
+  margin-left: 16px;
+}
+.news-and-events-title > h2 {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  font-family: "Noto Serif JP", serif;
+  margin-bottom: 32px;
+}
+@media (min-width: 768px) {
+  .news-and-events-title > h2 {
+    font-size: 40px;
+  }
+}
+.news-and-events-title > h2 .caption {
+  font-size: 16px;
+  font-family: Roboto, "Noto Sans JP", sans-serif;
+  font-weight: 400;
+  margin-left: 16px;
 }
 .plan-odd {
   text-align: center;
@@ -270,36 +306,6 @@ section {
   background-color: #f5f5f5;
 }
 .about .message .title {
-  color: #442606;
-}
-.news-and-events {
-  padding: 56px 0;
-  width: 100%;
-  background-color: #f5f5f5;
-}
-.news-and-events .col {
-  padding: 0 20px;
-}
-.news-and-events .col .news {
-  box-sizing: content-box;
-  width: 100%;
-}
-@media screen and (max-width: 992px) {
-  .news-and-events .col .news {
-    margin-bottom: 35px;
-  }
-}
-.news-and-events .col .news article {
-  background-color: #fff;
-}
-.news-and-events .col .events {
-  margin-bottom: 0;
-}
-.news-and-events .col .events .event-list h3 {
-  font-weight: 400;
-  transition: 0.2s ease;
-}
-.news-and-events .col .events .event-list h3:hover {
   color: #442606;
 }
 .card {
@@ -553,24 +559,6 @@ section {
   line-height: 1;
   padding: 16px;
 }
-.news-and-events-title > h2 {
-  display: flex;
-  align-items: center;
-  font-size: 20px;
-  font-family: "Noto Serif JP", serif;
-  margin-bottom: 32px;
-}
-@media (min-width: 768px) {
-  .news-and-events-title > h2 {
-    font-size: 40px;
-  }
-}
-.news-and-events-title > h2 .caption {
-  font-size: 16px;
-  font-family: Roboto, "Noto Sans JP", sans-serif;
-  font-weight: 400;
-  margin-left: 16px;
-}
 .header .navbar {
   height: 90px;
   background-color: rgba(0, 0, 0, 0.5);
@@ -758,87 +746,6 @@ section {
 .news .group4 a article h3 {
   font-weight: 400;
 }
-.news-and-events-more {
-  align-self: flex-end;
-  margin-top: 16px;
-  cursor: pointer;
-  color: #000;
-  text-decoration: none;
-  font-size: 14px;
-  transition: color 0.2s ease;
-  display: inline-flex;
-  align-items: center;
-}
-.news-and-events-more:hover {
-  color: #999;
-  text-decoration: none;
-}
-.news-and-events-more > i {
-  margin-left: 16px;
-}
-.message {
-  text-align: center;
-  padding: 52px 20px;
-  background-color: #000;
-  color: #fff;
-}
-@media screen and (max-width: 992px) {
-  .message {
-    padding: 32px 20px;
-  }
-}
-.message .title {
-  font-family: "Noto Serif JP", serif;
-  font-size: 36px;
-  line-height: 1.5;
-  margin-bottom: 10px;
-  text-align: center;
-}
-@media screen and (max-width: 992px) {
-  .message .title {
-    margin-bottom: 6px;
-    font-size: 20px;
-  }
-}
-.message .explanation {
-  font-size: 14px;
-  line-height: 2.6;
-  color: #000;
-}
-@media screen and (max-width: 992px) {
-  .message .explanation {
-    line-height: 2;
-  }
-}
-.top .top-header {
-  position: relative;
-}
-.top .top-header .header-img {
-  width: 100%;
-  height: 100vw;
-  object-fit: cover;
-}
-@media screen and (max-width: 992px) {
-  .top .top-header .header-img {
-    height: 360px;
-  }
-}
-.top .top-header .header-text {
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #fff;
-  writing-mode: vertical-rl;
-  font-size: 36px;
-  font-family: "Noto Serif JP", serif;
-}
-@media screen and (max-width: 992px) {
-  .top .top-header .header-text {
-    font-size: 20px;
-  }
-}
 .message {
   text-align: center;
   padding: 52px 20px;
@@ -908,4 +815,100 @@ section {
   .organisms-plans .button {
     margin: 0 auto 35px;
   }
+}
+.message {
+  text-align: center;
+  padding: 52px 20px;
+  background-color: #000;
+  color: #fff;
+}
+@media screen and (max-width: 992px) {
+  .message {
+    padding: 32px 20px;
+  }
+}
+.message .title {
+  font-family: "Noto Serif JP", serif;
+  font-size: 36px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+  text-align: center;
+}
+@media screen and (max-width: 992px) {
+  .message .title {
+    margin-bottom: 6px;
+    font-size: 20px;
+  }
+}
+.message .explanation {
+  font-size: 14px;
+  line-height: 2.6;
+  color: #000;
+}
+@media screen and (max-width: 992px) {
+  .message .explanation {
+    line-height: 2;
+  }
+}
+.top .top-header {
+  position: relative;
+}
+.top .top-header .header-img {
+  width: 100%;
+  height: 100vw;
+  object-fit: cover;
+}
+@media screen and (max-width: 992px) {
+  .top .top-header .header-img {
+    height: 360px;
+  }
+}
+.top .top-header .header-text {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  writing-mode: vertical-rl;
+  font-size: 36px;
+  font-family: "Noto Serif JP", serif;
+}
+@media screen and (max-width: 992px) {
+  .top .top-header .header-text {
+    font-size: 20px;
+  }
+}
+.top .message .explanation {
+  color: #fff;
+}
+.news-and-events {
+  padding: 56px 0;
+  width: 100%;
+  background-color: #f5f5f5;
+}
+.news-and-events .col {
+  padding: 0 20px;
+}
+.news-and-events .col .news {
+  box-sizing: content-box;
+  width: 100%;
+}
+@media screen and (max-width: 992px) {
+  .news-and-events .col .news {
+    margin-bottom: 35px;
+  }
+}
+.news-and-events .col .news article {
+  background-color: #fff;
+}
+.news-and-events .col .events {
+  margin-bottom: 0;
+}
+.news-and-events .col .events .event-list h3 {
+  font-weight: 400;
+  transition: 0.2s ease;
+}
+.news-and-events .col .events .event-list h3:hover {
+  color: #442606;
 }
