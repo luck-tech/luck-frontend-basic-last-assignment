@@ -25,5 +25,10 @@
         font-size: $fontsize-l;
       }
     }
+    .message {
+      .explanation {
+        color: $white;
+      }
+    }
   }
 }
