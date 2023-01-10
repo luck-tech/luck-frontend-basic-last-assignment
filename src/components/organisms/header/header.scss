@@ -1,6 +1,9 @@
 @use "../../variables" as *;
 .header {
   font-family: $fontfamily-gothic;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
   .navbar {
     height: 90px;
     background-color: $black_50;
