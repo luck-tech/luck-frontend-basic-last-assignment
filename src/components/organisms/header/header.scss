@@ -5,14 +5,15 @@
   z-index: 1;
   width: 100%;
   .navbar {
-    height: 90px;
-    background-color: $black_50;
+    height: 60px;
+    background-color: $black;
     flex-direction: row;
     padding: 0%;
     font-size: $fontsize-s;
-    @media screen and (max-width: $breakpoint-xl) {
-      height: 60px;
-      background-color: $black;
+    @media screen and (min-width: $breakpoint-xl) {
+      background-color: $black_50;
+      height: 90px;
+
       align-items: center;
     }
     .navbar-expand-lg {
@@ -23,19 +24,18 @@
       height: 60px;
     }
     .navbar-brand {
-      padding: 0%;
+      height: 20.56px;
       margin-right: 0%;
-      padding: 33.01px 50px 33.01px 30px;
-      @media screen and (max-width: $breakpoint-xl) {
-        padding: 0px 16px;
-        height: 20.56px;
+      padding: 0px 16px;
+      @media screen and (min-width: $breakpoint-xl) {
+        padding-left: 30px;
       }
       .navbar-brand-img {
-        width: 140px;
-        height: 23.99px;
-        @media screen and (max-width: $breakpoint-xl) {
-          width: 120px;
-          vertical-align: baseline;
+        width: 120px;
+        vertical-align: baseline;
+        @media screen and (min-width: $breakpoint-xl) {
+          height: 23.99px;
+          width: 140px;
         }
       }
     }
