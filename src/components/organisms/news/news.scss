@@ -5,6 +5,7 @@
   flex-direction: column;
   .group4 {
     margin-bottom: 30px;
+    font-family: $fontfamily-gothic;
     border-top: 1px solid $gray_gainsboro;
     a {
       text-decoration: none;
@@ -36,5 +37,8 @@
         }
       }
     }
+  }
+  .news-and-events-more {
+    font-family: $fontfamily-gothic;
   }
 }

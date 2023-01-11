@@ -10,6 +10,7 @@
     border-radius: 0;
     position: relative;
     .card-title {
+      font-family: $fontfamily-gothic;
       color: $orange_bistre;
       font-weight: 700;
       font-size: $fontsize-l;
@@ -43,6 +44,7 @@
   }
   .card-body {
     font-size: $fontsize-s;
+    font-family: $fontfamily-gothic;
     padding-bottom: 32px;
     .button {
       margin: auto;

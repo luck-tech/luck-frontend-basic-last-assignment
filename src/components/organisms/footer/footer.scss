@@ -1,6 +1,7 @@
 @use "../../variables" as *;
 
 .footer {
+  font-family: $fontfamily-gothic;
   text-align: center;
   .footer-body {
     background-color: $white;

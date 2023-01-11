@@ -26,4 +26,10 @@
       }
     }
   }
+  .message {
+    .explanation {
+      font-family: $fontfamily-gothic;
+      color: $white;
+    }
+  }
 }
