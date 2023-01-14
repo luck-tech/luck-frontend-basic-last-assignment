@@ -2,11 +2,9 @@
 @use "../../molecules/message/message.scss" as *;
 
 .about {
-  margin-bottom: 100px;
-
+  padding: 100px 40px;
   @media (max-width: $breakpoint-lg) {
-    margin-bottom: 40px;
-    padding: 69px 135px 0px;
+    padding: 69px 135px 40px;
   }
   .img-table {
     display: grid;

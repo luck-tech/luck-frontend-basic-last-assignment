@@ -4,38 +4,35 @@ body {
 section {
   margin-bottom: 120px;
 }
-.button {
-  display: flex;
-  color: #fff;
-  background-color: #000;
-  font-size: 14px;
-  transition: background-color 0.2s ease;
-  width: 200px;
-  height: 55px;
-  align-items: center;
-  justify-content: center;
-  font-family: Roboto, "Noto Sans JP", sans-serif;
+.news-and-events {
+  padding: 54px 0;
+  width: 100%;
+  background-color: #f5f5f5;
+}
+.news-and-events .col {
+  padding: 0 20px;
+}
+.news-and-events .col .news {
+  box-sizing: content-box;
+  width: 100%;
 }
 @media screen and (max-width: 992px) {
-  .button {
-    width: 150px;
-    height: 55px;
+  .news-and-events .col .news {
+    margin-bottom: 35px;
   }
 }
-@media screen and (max-width: 768px) {
-  .button {
-    width: 180px;
-    height: 45px;
-  }
+.news-and-events .col .news article {
+  background-color: #fff;
 }
-.button:hover {
-  color: #fff;
-  background-color: #442606;
-  text-decoration: none;
+.news-and-events .col .events {
+  margin-bottom: 0;
 }
-.assignment-example-button {
-  color: red;
-  font-size: 16px;
+.news-and-events .col .events .event-list h3 {
+  font-weight: 400;
+  transition: 0.2s ease;
+}
+.news-and-events .col .events .event-list h3:hover {
+  color: #442606;
 }
 .message {
   text-align: center;
@@ -77,6 +74,7 @@ section {
 @media (max-width: 992px) {
   .about {
     margin-bottom: 40px;
+    padding: 69px 135px 0;
   }
 }
 .about .img-table {
@@ -905,33 +903,36 @@ section {
   font-weight: 400;
   border-bottom: 1px solid #ddd;
 }
-.news-and-events {
-  padding: 54px 0;
-  width: 100%;
-  background-color: #f5f5f5;
-}
-.news-and-events .col {
-  padding: 0 20px;
-}
-.news-and-events .col .news {
-  box-sizing: content-box;
-  width: 100%;
+.button {
+  display: flex;
+  color: #fff;
+  background-color: #000;
+  font-size: 14px;
+  transition: background-color 0.2s ease;
+  width: 200px;
+  height: 55px;
+  align-items: center;
+  justify-content: center;
+  font-family: Roboto, "Noto Sans JP", sans-serif;
 }
 @media screen and (max-width: 992px) {
-  .news-and-events .col .news {
-    margin-bottom: 35px;
+  .button {
+    width: 150px;
+    height: 55px;
   }
 }
-.news-and-events .col .news article {
-  background-color: #fff;
+@media screen and (max-width: 768px) {
+  .button {
+    width: 180px;
+    height: 45px;
+  }
 }
-.news-and-events .col .events {
-  margin-bottom: 0;
+.button:hover {
+  color: #fff;
+  background-color: #442606;
+  text-decoration: none;
 }
-.news-and-events .col .events .event-list h3 {
-  font-weight: 400;
-  transition: 0.2s ease;
-}
-.news-and-events .col .events .event-list h3:hover {
-  color: #442606;
+.assignment-example-button {
+  color: red;
+  font-size: 16px;
 }
