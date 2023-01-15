@@ -4,6 +4,9 @@
 .organisms-plans {
   .message {
     background-color: $white;
+    @media screen and (min-width: $breakpoint-xl) {
+      padding-bottom: 32px;
+    }
     .title {
       color: $orange_bistre;
     }
