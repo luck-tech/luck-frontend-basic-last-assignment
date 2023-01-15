@@ -10,6 +10,7 @@
   height: 55px;
   align-items: center;
   justify-content: center;
+  font-family: $fontfamily-gothic;
 
   @media screen and (max-width: $breakpoint-lg) {
     width: 150px;
