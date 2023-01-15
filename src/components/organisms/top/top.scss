@@ -27,13 +27,16 @@
     }
   }
   .message {
-    padding: 32px 156px;
+    padding: 52px 0;
     @media screen and (max-width: $breakpoint-lg) {
-      padding: 52px 36px;
+      padding: 32px 0;
     }
-    .explanation {
-      font-family: $fontfamily-gothic;
-      color: $white;
+    .row {
+      display: block;
+      .explanation {
+        font-family: $fontfamily-gothic;
+        color: $white;
+      }
     }
   }
 }

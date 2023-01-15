@@ -2,29 +2,32 @@
 @use "../../molecules/message/message.scss" as *;
 
 .about {
-  padding: 100px 16px;
+  padding: 100px 0;
   @media (max-width: $breakpoint-lg) {
-    padding: 69px 135px 40px;
+    padding: 69px 0 40px;
   }
-  .img-table {
-    display: grid;
+  .row {
+    display: block;
+    .img-table {
+      display: grid;
 
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    @media (max-width: $breakpoint-lg) {
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      @media (max-width: $breakpoint-lg) {
+        grid-template-columns: 1fr 1fr;
+      }
+      .about-img {
+        width: 100%;
+      }
     }
-    .about-img {
-      width: 100%;
-    }
-  }
-  .message {
-    background-color: $white_smoke;
-    padding: 52px 20px;
-    @media (max-width: $breakpoint-lg) {
-      padding: 32px 20px;
-    }
-    .title {
-      color: $orange_bistre;
+    .message {
+      background-color: $white_smoke;
+      padding: 52px 20px;
+      @media (max-width: $breakpoint-lg) {
+        padding: 32px 20px;
+      }
+      .title {
+        color: $orange_bistre;
+      }
     }
   }
 }
